@@ -1,0 +1,37 @@
+Project Story: University Assistant Chatbot - Thor
+Welcome to the University Assistant Chatbot project! This project aims to create a helpful, interactive chatbot named Thor, designed to assist university students with various needs. Thor provides information on enrollment and registration, course details, financial information, campus resources, and contact information.
+
+Background
+University students often have numerous questions and need quick access to information related to their academic and campus life. To address this, we decided to build a chatbot that can provide immediate answers to common questions. This project is particularly useful for new students navigating their way through university processes for the first time.
+
+Objectives
+The primary objectives of the Thor chatbot are:
+
+Provide Immediate Assistance: Thor answers common queries related to university processes and resources.
+Enhance Student Experience: By providing accurate and timely information, Thor helps improve the overall student experience.
+Reduce Administrative Load: By handling frequently asked questions, Thor helps reduce the workload on university administrative staff.
+Features
+Thor is equipped to handle queries in the following areas:
+
+Enrollment and Registration: Information on how to enroll, required documents, and registration fee details.
+Course Details: Guidance on where to find the course catalog, how to select courses, and course orientation details.
+Financial Information: Assistance with applying for financial aid, information on scholarships and grants, and tuition fees and payment options.
+Campus Resources: Information on accessing library resources, student health center services, and career services and job placements.
+Contact Information: Providing email contacts for key university offices.
+How It Works
+The chatbot is implemented in Python and interacts with users through text-based input and output. Here’s a brief overview of the functionality:
+
+Introduction: Thor introduces himself and lists the areas he can assist with.
+Main Menu: Users can select from a menu of topics to get specific information.
+Sub-Menus: Each topic has its own set of questions and answers. Users can navigate these sub-menus to find the information they need.
+Links and Contact Information: Thor provides relevant links and contact information to ensure users can access detailed resources and support.
+Code Structure
+The code is structured into several functions, each handling a specific part of the interaction:
+
+introduce(): Thor's introduction and main capabilities.
+enrollment_and_registration(): Answers queries related to enrollment and registration.
+course_details(): Provides information on course details.
+financial_information(): Answers financial-related queries.
+campus_resources(): Provides information on campus resources.
+contact_information(): Gives contact details for various university offices.
+main(): The main function that drives the chatbot interaction.
