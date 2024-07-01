@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Chatbot</title>
+</head>
+<body>
+    <h1>Welcome to the University Helper Chatbot</h1>
+    <p>{{ intro|safe }}</p>
+    <form action="/get_response" method="post">
+        <input type="text" name="user_input" id="user_input">
+        <input type="submit" value="Submit">
+    </form>
+    <div id="response"></div>
+
+    <script>
+        const form = document.querySelector('form');
+        form.onsubmit = async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const response = await fetch('/get_response', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+            document.getElementById('response').innerHTML = data.response;
+        };
+    </script>
+</body>
+</html>
